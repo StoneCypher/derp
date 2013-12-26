@@ -1,5 +1,5 @@
-derp
-====
+`derp` - Direct Emission Resource Packager
+==========================================
 
 Computers are great at doing stupid things.  Serve your sites at the speed of `derp`.
 
@@ -39,7 +39,7 @@ I believe the most direct way to say it is "lol you use disks?  That's quaint." 
 
 It is un-slow.
 
-(Now let's wait for someone to tell us how they're going to run out of RAM for their gigundous site that they run on a Commodore 64.  This server is not exactly the right choice for, let's say, writing an imgur.  This is a good approach for a site whose static content is south of half a gig, on servers contemporary to late 2013.  If you actually need a disk full of content, don't de-disc.)
+(Now let's wait for someone to tell us how they're going to run out of RAM for their gigundous site that they run on a Commodore 64.  This server is not exactly the right choice for, let's say, writing an imgur.  This is a good approach for a site whose static content is south of half a gig, on servers contemporary to late 2013.  If you actually need a disk full of content, don't de-disk.)
 
 
 
@@ -48,7 +48,7 @@ It is un-slow.
 And so what's derp?
 -------------------
 
-`derp` is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).  Point it at a directory, and it will write to disk (or return, if you prefer) the source to an Erlang module that will serve your site pre-compiled from memory.  Then you compile that, and bang, you have a fully compiled pre-loaded site serving directly from main memory, with very few interlocking systems involved.  You shouldn't need to ask the operating system for the data for your static webpage.  It makes le No of Sense.
+Direct Emission Resource Packager - `derp` - is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).  Point it at a directory, and it will write to disk (or return, if you prefer) the source to an Erlang module that will serve your site pre-compiled from memory.  Then you compile that, and bang, you have a fully compiled pre-loaded site serving directly from main memory, with very few interlocking systems involved.  You shouldn't need to ask the operating system for the data for your static webpage.  It makes le No of Sense.
 
 Let's be clear: this is a special circumstance site generator.  Most probably you'll put it behind a router that can also point at dynamic content of yours.  But, for serving your site's sprites, CSS, JS, HTML5 inclusion fragments, static pages, etc?  This is speedy.
 
