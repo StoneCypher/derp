@@ -3,10 +3,7 @@ derp
 
 Computers are great at doing stupid things.  Serve your sites at the speed of `derp`.
 
-Direct Emission Resource Packager
----------------------------------
 
-Serve static sites hot from RAM.
 
 
 
@@ -33,6 +30,8 @@ Bang: static site served directly from RAM.  No disk.  No hassle.  Hella fast.
 
 What are you on about this time
 -------------------------------
+
+`derp` - "Direct Emission Resource Packager" - assembles assets into a compiled Erlang module for use with [htstub](https://github.com/StoneCypher/htstub/).
 
 Static site generators are the new hotness again this week; replace WordPress with (random script,) because what's a Movable Type, I guess.  And then they brag that their load time is "down to" ~360ms.
 
