@@ -22,6 +22,8 @@ ok
 
 Bang: static site served directly from RAM.  No disk.  No hassle.  Hella fast.
 
+`derp` is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).
+
 
 
 
