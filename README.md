@@ -14,7 +14,7 @@ tl;dr
 ok
 
 2> c("ex_derp.erl").
-ok
+{ok, ex_derp}
 
 3> htstub:serve(ex_derp).
 <0.519.0>
