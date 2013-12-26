@@ -12,11 +12,13 @@ What are you on about this time
 
 Static site generators are the new hotness again this week; replace WordPress with (random script,) because what's a Movable Type, I guess.  And then they brag that their load time is "down to" ~360ms.
 
-But, in the misappropriated words of D'Mite, we're gonna go bigger, and staticer.
+But, in the misappropriated words of D'Mite, fuck that, we're gonna go bigger. And staticer.
 
-I believe the most direct way to say it is "lol you use disks?  That's quaint."  We set a set of routes, compile the binary assets to a module, and serve them hot from RAM.
+I believe the most direct way to say it is "lol you use disks?  That's quaint."  We set a set of routes, compile the binary assets to a module, and serve them hot from RAM.  No more inodes, no more filesystem, no more nonsense.  Let the language follow a pointer and call it a tasty beverage.
 
-(Now let's wait for someone to tell us how they're going to run out of RAM for their gigundous site that they run on a Commodore 64.  This server is not exactly the right choice for, let's say, writing an imgur.)
+It is un-slow.
+
+(Now let's wait for someone to tell us how they're going to run out of RAM for their gigundous site that they run on a Commodore 64.  This server is not exactly the right choice for, let's say, writing an imgur.  This is a good approach for a site whose static content is south of half a gig, on servers contemporary to late 2013.  If you actually need a disk full of content, don't de-disc.)
 
 
 
@@ -25,11 +27,13 @@ I believe the most direct way to say it is "lol you use disks?  That's quaint." 
 And so what's derp?
 -------------------
 
-`derp` is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).  Point it at a directory, and it will return the source to an Erlang module that will serve your site pre-compiled from memory.  
+`derp` is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).  Point it at a directory, and it will write to disk (or return, if you prefer) the source to an Erlang module that will serve your site pre-compiled from memory.  Then you compile that, and bang, you have a fully compiled pre-loaded site serving directly from main memory, with very few interlocking systems involved.  You shouldn't need to ask the operating system for the data for your static webpage.  It makes le No of Sense.
+
+Let's be clear: this is a special circumstance site generator.  Most probably you'll put it behind a router that can also point at dynamic content of yours.  But, for serving your site's sprites, CSS, JS, HTML5 inclusion fragments, static pages, etc?  This is speedy.
 
 Think you're fast?
 
-Wait until you're fast as derp.
+Wait until you're fast as `derp`.
 
 
 
@@ -38,7 +42,7 @@ Wait until you're fast as derp.
 Lol ok.  Hau 2 use?
 -------------------
 
-Pretty simple, really.  Call the generator pointed at some directory you want to re-represent, with the filename you want it to dump into.  The generator will then generate a module
+Pretty simple, really.  Call the generator pointed at some directory you want to re-represent, with the filename you want it to dump into.  The generator will then generate a module on disk, which you compile.  Then, it's just `htstub:serve(your_derp_module).`  (In practical situations, you may want to specify a subdomain, or a port, or put it behind a router; very few sites are fully-static.  But, this would be good enough for a blog, say.)
 
 
 
