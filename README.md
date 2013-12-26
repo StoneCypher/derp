@@ -7,6 +7,25 @@ Computers are great at doing stupid things.  Serve your sites at the speed of `d
 
 
 
+tl;dr
+-----
+```erlang
+1> derp:gen_site("/users/john/projects/example_derp_site", "ex_derp").
+ok
+
+2> c("ex_derp.erl").
+ok
+
+3> htstub:serve(ex_derp).
+<0.519.0>
+```
+
+Bang: static site served directly from RAM.  No disk.  No hassle.  Hella fast.
+
+
+
+
+
 What are you on about this time
 -------------------------------
 
