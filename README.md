@@ -84,4 +84,4 @@ Besides, all I have to say is "erlang" and people already believe it's 15% faste
 Polemic :neckbeard:
 -------------------
 
-`htstub` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
+`derp` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
