@@ -78,3 +78,10 @@ So how fast is derp, exactly?
 Whoa, whoa, whoa.  What do you want, ***measurements***?  I barely even started writing it yet.
 
 Besides, all I have to say is "erlang" and people already believe it's 15% faster than is actually possible.
+
+
+
+Polemic :neckbeard:
+-------------------
+
+`htstub` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
