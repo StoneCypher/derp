@@ -13,7 +13,7 @@ tl;dr
 `derp` - "Direct Emission Resource Packager" - assembles assets into a compiled Erlang module for use with [htstub](https://github.com/StoneCypher/htstub/).
 
 ```erlang
-1> derp:gen_site("/users/john/projects/example_derp_site", "ex_derp").
+1> derp:gen_site("/users/john/projects/example_derp_site", "static/", ex_derp).
 ok
 
 2> c("ex_derp.erl").
@@ -78,6 +78,8 @@ So how fast is derp, exactly?
 Whoa, whoa, whoa.  What do you want, ***measurements***?  I barely even started writing it yet.
 
 Besides, all I have to say is "erlang" and people already believe it's 15% faster than is actually possible.
+
+
 
 
 
