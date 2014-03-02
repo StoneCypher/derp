@@ -7,9 +7,10 @@
 
 -export([
 
+    default_options/0,
+
     gen_site/2,
-      gen_site/3,
-      gen_site/4
+      gen_site/3
 
 ]).
 
@@ -17,25 +18,28 @@
 
 
 
+default_options() ->
+
+    [   { path_prefix,    <<"/">> },
+        { output_file,    false   },
+        { recursive_read, true    }
+    ].
+
+
+
+
+
 gen_site(SrcPath, OutName) ->
 
-    gen_site(SrcPath, OutName, <<"/">>).
+    gen_site(SrcPath, OutName, []).
 
 
 
 
 
-gen_site(SrcPath, OutName, ServePrefix) ->
+gen_site(SrcPath, OutName, UserOptions) ->
+
+    Options = sc:merge_settings(UserOptions, default_options()),
 
     { ok, Files } = file:list_dir(SrcPath),
-    Files.
-
-
-
-
-
-gen_site(SrcPath, OutName, ServePrefix, OutFile) ->
-
-    % call gen_site/3, write the result to disk; duh
-
-    todo.
+    { Files, Options }.
