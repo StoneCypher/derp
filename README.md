@@ -77,7 +77,7 @@ Pretty simple, really.  Call the generator pointed at some directory you want to
 So how fast is derp, exactly?
 -----------------------------
 
-Whoa, whoa, whoa.  What do you want, ***measurements***?  I barely even started writing it yet.
+Whoa, whoa, whoa.  What do you want, ***measurements***?  I've barely even started writing it yet.
 
 Besides, all I have to say is "erlang" and people already believe it's 15% faster than is actually possible.
 
