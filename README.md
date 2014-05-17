@@ -12,6 +12,24 @@ Computers are great at doing stupid things.  Serve your sites at the speed of `d
 tl;dr
 -----
 
+`rebar g-d co eu doc`
+
+
+
+
+
+Current Library Status: *Not Usable*
+--------------------------------
+
+This library is only just barely begun.
+
+
+
+
+
+tl;dr
+-----
+
 `derp` - "Direct Emission Resource Packager" - assembles assets into a compiled Erlang module for use with [htstub](https://github.com/StoneCypher/htstub/).
 
 ```erlang
@@ -28,7 +46,6 @@ ok
 Bang: static site served directly from RAM.  No disk.  No hassle.  Hella fast.
 
 `derp` is a static site generator for [htstub](https://github.com/StoneCypher/htstub/).
-
 
 
 
@@ -82,6 +99,20 @@ Whoa, whoa, whoa.  What do you want, ***measurements***?  I've barely even start
 Besides, all I have to say is "erlang" and people already believe it's 15% faster than is actually possible.
 
 
+
+
+
+Author
+------
+
+* [John Haugeland](mailto:stonecypher@gmail.com) of [http://fullof.bs/](http://fullof.bs/).
+
+
+
+Copyright
+---------
+
+Copyright (c) 2014 John Haugeland.  All rights reserved.
 
 
 

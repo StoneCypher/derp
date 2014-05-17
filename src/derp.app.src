@@ -1,0 +1,15 @@
+%% -*- mode: erlang -*-
+{application, derp,
+ [
+  {description, "DERP - Direct emission resource packager - is a high efficiency static server generator for HtStub and Erlang"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  %% uncomment if this is an active application
+  %% {mod, { example_project_app, []}},
+  {env, []}
+ ]}.
+%% vim: set filetype=erlang tabstop=2
