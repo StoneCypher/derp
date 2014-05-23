@@ -112,7 +112,7 @@ Author
 Copyright
 ---------
 
-Copyright (c) 2014 John Haugeland.  All rights reserved.
+Copyright &copy; 2014 John Haugeland.  All rights reserved.
 
 
 
