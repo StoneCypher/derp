@@ -21,7 +21,7 @@ tl;dr
 Current Library Status: *Not Usable*
 --------------------------------
 
-This library is only just barely begun.
+This library is only just barely begun.  It can barely be used in console so far.
 
 
 
