@@ -5,6 +5,13 @@ Computers are great at doing stupid things.  Serve your sites at the speed of `d
 
 *(this module is experimental and incomplete; do not use yet)*
 
+![Language](http://img.shields.io/badge/Language-Erlang-000000.svg) &nbsp;
+![Platform](http://img.shields.io/badge/Platform-OTP-000000.svg) &nbsp;
+![License](http://img.shields.io/badge/License-MIT-000055.svg) &nbsp;
+![Status](http://img.shields.io/travis/StoneCypher/derp.svg) &nbsp;
+![Release](http://img.shields.io/github/release/StoneCypher/derp.svg) &nbsp;
+[![Issues](http://img.shields.io/github/issues/StoneCypher/derp.svg)](https://github.com/StoneCypher/derp/issues)
+
 
 
 
